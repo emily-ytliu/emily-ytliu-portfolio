@@ -59,12 +59,9 @@ main {
         font-weight: 700;
 
         span {
+            padding-left: 10px;
             color: $primary-color;
         }
-    }
-
-    p {
-        // line-height: 1.5rem;
     }
 
     .container {
@@ -124,12 +121,13 @@ main {
 
             .content-box {
                 li {
-                    width: 40%;
+                    width: 50%;
                     display: flex;
                     justify-content: space-between;
-
-                    p {
-
+                        
+                    .edu-time {
+                        font-size: 1rem;
+                        color: $primary-color-dark;
                     }
                 }
 
@@ -186,7 +184,9 @@ main {
         }
 
         .content-box {
+
             li {
+
                 .job-title-box {
 
                     margin-bottom: 10px;
@@ -195,19 +195,25 @@ main {
                         font-size: 1.5rem;
                     }
 
-                    &::before {
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        background-color: $primary-color-dark;
-                    }
+                }
+
+                .job-title-box h3::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin: 0 10px 4px;
+                    background-color: $primary-color-dark;
+                    border-radius: 50%;
+
                 }
 
                 .job-subtitle-box {
-                    width: 40%;
+                    width: 50%;
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 15px;
+                    padding-left: 10px;
                     color: $primary-color-dark;
 
                     .job-where {
@@ -221,13 +227,29 @@ main {
 
                 .job-what-box {
                     margin-bottom: 40px;
+                    padding-left: 30px;
+                    counter-reset: num;
+
                     li {
+                        position: relative;
 
                         p {
+                            
+                        }
 
+                        &::before {
+                            counter-increment: num;
+                            content: counter(num)".";
+                            counter-increment: num;
+                            color: #666;
+                            font-size: 1rem;
+                            position: absolute;
+                            bottom: 0;
+                            padding: 5px 0;
                         }
                     }
                 }
+
             }
         }
     }

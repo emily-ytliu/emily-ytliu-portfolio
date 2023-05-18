@@ -44,6 +44,7 @@ main h2 {
   font-weight: 700;
 }
 main h2 span {
+  padding-left: 10px;
   color: #5fa087;
 }
 main .container .title-box {
@@ -65,9 +66,13 @@ main .summary-container .education-box {
   margin-bottom: 40px;
 }
 main .summary-container .education-box .content-box li {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
+}
+main .summary-container .education-box .content-box li .edu-time {
+  font-size: 1rem;
+  color: #4d846f;
 }
 main .skill-container {
   padding: 0 20px;
@@ -95,19 +100,38 @@ main .work-container .content-box li .job-title-box {
 main .work-container .content-box li .job-title-box h3 {
   font-size: 1.5rem;
 }
-main .work-container .content-box li .job-title-box::before {
+main .work-container .content-box li .job-title-box h3::before {
   content: "";
-  width: 5px;
-  height: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 4px;
   background-color: #4d846f;
+  border-radius: 50%;
 }
 main .work-container .content-box li .job-subtitle-box {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  padding-left: 10px;
   color: #4d846f;
 }
 main .work-container .content-box li .job-what-box {
   margin-bottom: 40px;
+  padding-left: 30px;
+  counter-reset: num;
+}
+main .work-container .content-box li .job-what-box li {
+  position: relative;
+}
+main .work-container .content-box li .job-what-box li::before {
+  counter-increment: num;
+  content: counter(num) ".";
+  counter-increment: num;
+  color: #666;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 0;
 }/*# sourceMappingURL=style.css.map */
