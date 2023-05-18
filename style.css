@@ -1,0 +1,113 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+* {
+  text-decoration: none;
+}
+
+header {
+  background-image: url("./img/moutain-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .header-container {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+header .header-container .header-pic-box-shot {
+  width: 15%;
+  margin: auto;
+}
+header .header-container .header-pic-box-shot img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-radius: 50%;
+}
+header .header-container .header-title-box h1 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+header .header-container .header-subtitle-box p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+main {
+  margin: 60px;
+}
+main h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main h2 span {
+  color: #5fa087;
+}
+main .container .title-box {
+  padding: 15px 20px;
+  border-bottom: 1.5px solid #666;
+}
+main .container .content-box {
+  padding: 20px;
+}
+main .container .content-box li p {
+  padding: 5px 20px;
+}
+main .summary-container .profile-box {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+main .summary-container .education-box {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+main .summary-container .education-box .content-box li {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+main .skill-container {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+main .skill-container .content-box {
+  display: flex;
+  justify-content: space-between;
+}
+main .skill-container .content-box li {
+  width: 50%;
+  display: flex;
+}
+main .skill-container .content-box li h3 {
+  padding: 5px 20px;
+  font-size: 1.2rem;
+}
+main .work-container {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+main .work-container .content-box li .job-title-box {
+  margin-bottom: 10px;
+}
+main .work-container .content-box li .job-title-box h3 {
+  font-size: 1.5rem;
+}
+main .work-container .content-box li .job-title-box::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #4d846f;
+}
+main .work-container .content-box li .job-subtitle-box {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #4d846f;
+}
+main .work-container .content-box li .job-what-box {
+  margin-bottom: 40px;
+}/*# sourceMappingURL=style.css.map */
